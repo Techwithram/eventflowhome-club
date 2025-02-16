@@ -1,0 +1,312 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script
+      src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js"
+      defer
+      init
+    ></script>
+    <script type="text/javascript">
+      window.tailwind.config = {
+        darkMode: ["class"],
+        theme: {
+          extend: {
+            colors: {
+              border: "hsl(var(--border))",
+              input: "hsl(var(--input))",
+              ring: "hsl(var(--ring))",
+              background: "hsl(var(--background))",
+              foreground: "hsl(var(--foreground))",
+              primary: {
+                DEFAULT: "hsl(var(--primary))",
+                foreground: "hsl(var(--primary-foreground))",
+              },
+              secondary: {
+                DEFAULT: "hsl(var(--secondary))",
+                foreground: "hsl(var(--secondary-foreground))",
+              },
+              destructive: {
+                DEFAULT: "hsl(var(--destructive))",
+                foreground: "hsl(var(--destructive-foreground))",
+              },
+              muted: {
+                DEFAULT: "hsl(var(--muted))",
+                foreground: "hsl(var(--muted-foreground))",
+              },
+              accent: {
+                DEFAULT: "hsl(var(--accent))",
+                foreground: "hsl(var(--accent-foreground))",
+              },
+              popover: {
+                DEFAULT: "hsl(var(--popover))",
+                foreground: "hsl(var(--popover-foreground))",
+              },
+              card: {
+                DEFAULT: "hsl(var(--card))",
+                foreground: "hsl(var(--card-foreground))",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer base {
+        :root {
+          --background: 0 0% 100%;
+          --foreground: 240 10% 3.9%;
+          --card: 0 0% 100%;
+          --card-foreground: 240 10% 3.9%;
+          --popover: 0 0% 100%;
+          --popover-foreground: 240 10% 3.9%;
+          --primary: 240 5.9% 10%;
+          --primary-foreground: 0 0% 98%;
+          --secondary: 240 4.8% 95.9%;
+          --secondary-foreground: 240 5.9% 10%;
+          --muted: 240 4.8% 95.9%;
+          --muted-foreground: 240 3.8% 46.1%;
+          --accent: 240 4.8% 95.9%;
+          --accent-foreground: 240 5.9% 10%;
+          --destructive: 0 84.2% 60.2%;
+          --destructive-foreground: 0 0% 98%;
+          --border: 240 5.9% 90%;
+          --input: 240 5.9% 90%;
+          --ring: 240 5.9% 10%;
+          --radius: 0.5rem;
+        }
+        .dark {
+          --background: 240 10% 3.9%;
+          --foreground: 0 0% 98%;
+          --card: 240 10% 3.9%;
+          --card-foreground: 0 0% 98%;
+          --popover: 240 10% 3.9%;
+          --popover-foreground: 0 0% 98%;
+          --primary: 0 0% 98%;
+          --primary-foreground: 240 5.9% 10%;
+          --secondary: 240 3.7% 15.9%;
+          --secondary-foreground: 0 0% 98%;
+          --muted: 240 3.7% 15.9%;
+          --muted-foreground: 240 5% 64.9%;
+          --accent: 240 3.7% 15.9%;
+          --accent-foreground: 0 0% 98%;
+          --destructive: 0 62.8% 30.6%;
+          --destructive-foreground: 0 0% 98%;
+          --border: 240 3.7% 15.9%;
+          --input: 240 3.7% 15.9%;
+          --ring: 240 4.9% 83.9%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <body
+      class="bg-background text-foreground"
+      
+    >
+      <nav class="flex justify-between p-4 bg-primary shadow-lg">
+        <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body style="background-image: url(connectpep.jpg);
+  background-size: cover;">
+    <img src="Screenshot 2025-02-05 230259.png" alt="Event Flow Logo" class="h-10 w-10 object-cover rounded-full">
+
+        <div class="text-2xl font-bold text-primary-foreground">Event Flow</div>
+        <div class="space-x-4">
+          <a
+            href="#"
+            class="text-primary-foreground hover:text-primary-foreground/80 transition duration-200"
+            >Home</a
+          >
+          <a
+            href="https://event-flow-create-event-3j2h.vercel.app/"
+            class="text-primary-foreground hover:text-primary-foreground/80 transition duration-200"
+            >Events</a
+          >
+          <a
+            href="https://eventflowregister1.vercel.app/"
+            class="text-primary-foreground hover:text-primary-foreground/80 transition duration-200"
+            >Registered</a
+          >
+          
+        </div>
+      </nav>
+      <main
+        class="flex flex-col items-center justify-center h-screen text-center p-4 bg-cover"
+      >
+        <h1
+          class="text-4xl font-semibold mb-4 text-gradient"
+          style="padding-top: 50px;
+          color: antiquewhite;"
+        >
+          Conduct your Events more effective and effortless with EVENT FLOW.
+        </h1>
+        <p
+          class="mb-6 text-lg text-muted-foreground"
+         
+        >
+          Create, Manage and Register for events with no time wasted.
+        </p>
+        <div class="flex" style="width:90%; display: flex;">
+          <div style="flex:1;
+          border:2px solid black;
+          margin: 10px;
+          background-color: rgb(245, 236, 223,0.5);
+          width: 600px;
+          height:500px;
+          ">
+          <h1 style="font-size: 36px;"><strong>Events</strong></h1>
+          <h2 style="padding-top: 30px;">Stay updated with the latest happenings and never miss out on exciting events!</h2>
+          <button
+          class="bg-green-500 text-white p-3 rounded-lg shadow-lg hover:bg-green-600 transition duration-200 transform hover:scale-105"
+        style="opacity: 100%;
+        margin: 53%;
+        width: 140px;
+        margin-left: 220px;
+        margin-bottom: 5px;
+        box-shadow: 1px 4px 4px black;">
+         <a href="https://event-flow-create-event-3j2h.vercel.app/"> Create Events</a>
+        </button></div>
+          <div style="flex:1;
+          border:2px solid black;
+          background-color: rgb(239, 233, 225,0.5);
+          margin: 10px;width: 400px;
+          height:500px;
+          margin-left: 100px;
+          "><h1 style="font-size: 36px;"><strong>Registrations</strong></h1>
+          <h2 style="padding-top: 30px;">Check out the top performers and see who’s leading the charts!</h2><button
+            class="bg-pink-500 text-white p-3 rounded-lg shadow-lg hover:bg-pink-600 transition duration-200 transform hover:scale-105" style="opacity: 100%;margin: 90%;
+             margin: 53%;
+        width: 140px;
+        margin-left: 240px;
+        margin-bottom: 14px;
+        box-shadow: 1px 4px 4px black;"
+          >
+            <a href="https://eventflowregister1.vercel.app/">Registration</a>
+          </button>
+          </div>
+        </div>
+        
+      </main>
+      <footer class="bg-primary text-primary-foreground text-center py-4">
+        <p>&copy; 2023 Event Flow. All Rights Reserved.</p>
+        <p>Creators:<li><ol>Parvesh Kumar</ol>
+          <ol>Megha Vijaykumar</ol>
+          <ol>Kavya</ol>
+          <ol>Thatikonda Ramakrishna</ol></li></p>
+          <p>Follow us In <li><ol>Instagram</ol>
+          <ol>Facebook</ol><ol>Linkedin</ol></li></p>
+      </footer>
+      <button
+        id="theme-toggle"
+        class="fixed bottom-4 right-4 bg-primary text-primary-foreground p-3 rounded-full shadow-lg hover:bg-primary/80 transition duration-200"
+      >
+        Toggle Theme
+      </button>
+      <script>
+        const themeToggle = document.getElementById("theme-toggle");
+        const body = document.body;
+        themeToggle.addEventListener("click", () => {
+          body.classList.toggle("dark");
+        });
+      </script>
+    </body>
+  </body>
+</html>
